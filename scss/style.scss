@@ -1,13 +1,5 @@
 @import "data";
 
-:root{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
 
 body {
     background-color: $background-color;
@@ -23,6 +15,24 @@ body {
 
 hr{
     visibility:hidden;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 /* HOME */
@@ -46,13 +56,11 @@ hr{
 }
 
 /* PORTFOLIO */
-
 .card{
     background-color: lighten($primary-color, 5%);
 }
 
 /* CONTACT */
-
 .form-control{
     background-color: #525252;
     color: $font-color;
@@ -88,8 +96,7 @@ hr{
     border-radius: 50%;
 }
 
-/* Media Queries*/
-
+/* MEDIA QUERIES */
 @media only screen and (min-width:576px) {
 
     #img-home{
