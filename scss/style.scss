@@ -1,0 +1,113 @@
+@import "data";
+
+:root{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: $background-color;
+    color: #FFFFFF;
+    font-family: $font;
+}
+
+
+#content{
+    background-color: $primary-color;
+}
+
+
+hr{
+    visibility:hidden;
+}
+
+/* HOME */
+#img-home{
+    width: 20rem;
+}
+
+.social{
+    padding: 0.7rem 1rem; 
+    border-radius: 50%;
+}
+
+
+.social:hover{
+    background-color: $background-color;
+}
+
+/* BIO */
+#img-bio{
+    width: 25rem;
+}
+
+/* PORTFOLIO */
+
+.card{
+    background-color: lighten($primary-color, 5%);
+}
+
+/* CONTACT */
+
+.form-control{
+    background-color: #525252;
+    color: $font-color;
+}
+
+.form-control:focus{
+    background-color: #525252;
+    color: $font-color;
+    box-shadow: none;
+}
+
+.btn-primary{
+    background-color: #141414 ;
+    border-color: #FFF;
+
+    &:hover {
+        background-color: #1F1F1F;
+        border-color: black;
+    }
+}
+
+/* NAV */
+.btn-menu{
+    background-color:$background-color;
+}
+
+.off-canva-bg{
+    background-color: $background-color;
+}
+
+.btn-close{
+    background-color:#FFFFFF;
+    border-radius: 50%;
+}
+
+/* Media Queries*/
+
+@media only screen and (min-width:576px) {
+
+    #img-home{
+        width: 25rem;
+    }
+
+    #img-bio{
+        width: 35rem;
+    }
+}
+
+@media only screen and (min-width:992px) {
+
+    .btn-menu{
+        background-color:$primary-color;
+    }
+
+    #img-bio{
+        width: 45rem;
+    }
+}
