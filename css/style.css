@@ -87,7 +87,7 @@ hr {
 /* Media Queries*/
 @media only screen and (min-width: 576px) {
   #img-home {
-    width: 25rem;
+    width: 20rem;
   }
   #img-bio {
     width: 35rem;
@@ -97,6 +97,15 @@ hr {
 @media only screen and (min-width: 992px) {
   .btn-menu {
     background-color: #292929;
+  }
+  #img-bio {
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-height: 900px) {
+  #img-home {
+    width: 25rem;
   }
   #img-bio {
     width: 45rem;
