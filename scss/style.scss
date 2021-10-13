@@ -3,15 +3,13 @@
 
 body {
     background-color: $background-color;
-    color: #FFFFFF;
+    color: $font-color;
     font-family: $font;
 }
-
 
 #content{
     background-color: $primary-color;
 }
-
 
 hr{
     visibility:hidden;
@@ -26,7 +24,6 @@ hr{
     background: #f1f1f1;
 }
   
-
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
@@ -44,7 +41,6 @@ hr{
     padding: 0.7rem 1rem; 
     border-radius: 50%;
 }
-
 
 .social:hover{
     background-color: $background-color;
