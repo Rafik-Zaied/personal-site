@@ -1,7 +1,7 @@
 # Personal-Site
 
 This is the first project in my Start2Impact journey (a learning platform).<br>
-I had to make a personal site, that comprehends a homepage, a bio, a portfolio page, that will be updated with everytime i'll make a new project or learn a new skill, 
+I had to make a personal site, that comprehends a homepage, a bio, a portfolio page that will be updated everytime I will make a new project or learn a new skill, 
 and a contact form.
 
 
