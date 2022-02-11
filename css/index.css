@@ -338,20 +338,11 @@ header {
 }
 
 .skills {
-  max-width: 500px;
-  margin-bottom: 4em;
+  max-width: 900px;
   display: grid;
-  grid-template-columns: auto auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skill {
-  margin: 0 auto;
-}
-
-.skill:last-of-type {
-  grid-column: 1 / -1;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1em;
+  margin: 0 auto 4em;
 }
 
 .skill h3 {
@@ -359,23 +350,12 @@ header {
 }
 
 .skill-logo {
-  font-size: var(--fs-h1);
-}
-
-.skill-logo:last-of-type {
-  grid-column: 1 / 3;
+  font-size: 4rem;
 }
 
 @media (min-width: 800px) {
-  .skills {
-    display: flex;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .skill + .skill {
-    margin-left: 2em;
+  .skill-logo {
+    font-size: 5rem;
   }
 }
 
