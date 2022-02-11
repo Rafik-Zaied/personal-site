@@ -16,7 +16,7 @@ and a contact form.
 
 * Rafik Zaied - rafik.zaied96@gmail.com
 * Github - https://github.com/Rafik-Zaied/personal-site
-* Website - https://rafik-zaied.netlify.app/
+* Website - https://rafikzaied.netlify.app/
 
 
 
