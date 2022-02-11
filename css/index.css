@@ -385,7 +385,7 @@ header {
 
 .portfolio-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
   grid-gap: 0.5em;
 }
@@ -404,6 +404,12 @@ header {
 .portfolio-item:focus .portfolio-img {
   transform: scale(1.2);
   opacity: 0.5;
+}
+
+@media (min-width: 500px) {
+  .portfolio-items {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 }
 
 /* FOOTER */
