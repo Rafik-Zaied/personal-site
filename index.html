@@ -1,83 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/1aa1c67de8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Rafik Zaied</title>
-</head>
-<body>
-    
-    <nav class="navbar navbar-dark fixed-top text-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="btn-menu navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="container-fluid navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="off-canva-bg offcanvas-header">
-                <h3 class="offcanvas-title" id="offcanvasNavbarLabel"></h3>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body off-canva-bg">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                    <a class="h5 nav-link text-white" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="h5 nav-link text-white" href="/index.html#bio">Bio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="h5 nav-link text-white" href="/portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="h5 nav-link text-white" href="/contact.html">Contact me</a>
-                </li>
-                </ul>   
-            </div>
-        </div>
-    </nav>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html" class="nav-link"><img src="img/devrafik.png" alt="" /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
 
-    <section id="home">
-        <div class="container-lg min-vh-100 d-flex flex-column justify-content-around align-items-center" id="content">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">My Skills</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            <img id="img-home" class="rounded-circle" src="images/home-img.jpeg" alt="">
-            <div class="text-center">
-            <h1 class="display-5 fw-bold">Zaied Rafik</h1>
-            <h2 class="m-5">Front-end developer student</h2>
-            <h3>25 Italy</h3>
-            </div>
-
-            <div class="d-flex justify-content-around">
-                <a href="https://github.com/Rafik-Zaied" target="_blank" class="social h1 text-white mx-3 bi bi-github"></a>
-                <a href="https://www.instagram.com/rafik_zaied/" target="_blank" class="social h1 text-white mx-3 bi bi-instagram"></a>
-            </div>
-            
-        </div>
+    <!-- INTRODUCTION -->
+    <section class="intro" id="home">
+      <h1 class="section-title section-title-intro">Hi, I am <strong>Rafik Zaied</strong></h1>
+      <p class="section-subtitle section-subtitle-intro">front-end dev</p>
+      <img class="intro-img" src="img/home-img.jpeg" alt="" />
     </section>
 
-    <hr>
-    
-    <section id="bio">
-        <div class="bio container-lg min-vh-100 d-flex flex-column justify-content-around justify-content-md-between align-items-center" id="content">
-            <div class="my-4 text-center h5">
-                <p>After almost 25 years on this planet only one thing could make this man follow his passion: <em>working in retail during a pandemic.</em></p>
-                <p>So here I am, putting all I've got into learning all the skills needed to evolve from a front-end <del>caterpillar</del> student to a beautiful front-end <del>butterfly</del> developer.</p>
-                <p>So far things are going great. I mean, I made this which is kinda cool I think.</p>
-            </div>
-                
-            <img id="img-bio" src="images/bio-img.png" alt="">
-            
+    <!-- MY SKILLS -->
+    <section class="my-skills" id="skills">
+      <h2 class="section-title section-title-skills">My skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>HTML</h3>
+          <i class="skill-logo fab fa-html5"></i>
         </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <i class="skill-logo fab fa-css3-alt"></i>
+        </div>
+        <div class="skill">
+          <h3>BOOTSTRAP</h3>
+          <i class="skill-logo fab fa-css3-alt"></i>
+        </div>
+        <div class="skill">
+          <h3>JAVASCRIPT</h3>
+          <i class="skill-logo fab fa-js-square"></i>
+        </div>
+        <div class="skill">
+          <h3>REACT</h3>
+          <i class="skill-logo fab fa-react"></i>
+        </div>
+      </div>
+      <a class="btn" href="#portfolio">My portfolio</a>
+    </section>
 
-    </section> 
+    <!-- ABOUT ME -->
+    <section class="about-me" id="about">
+      <h2 class="section-title section-title-about">TL;DR of my life:</h2>
+      <p class="section-subtitle section-subtitle-about"><strong>25, based in Modena IT</strong></p>
+      <div class="about-body">
+        <p>
+          I graduated from tech school in 2017, and up until 2021 I gave up my passion to try and fit in a working
+          environment that, I later discovered, didn’t fulfill me. So, I decided to go full-time doing what I actually
+          love: web development.
+        </p>
+        <p>So here I am, doing what I love and hopefully doing it right!</p>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-</body>
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="section-title">My portfolio</h2>
+      <p class="section-subtitle section-subtitle-portfolio">A selection of my range of work</p>
+
+      <div class="portfolio-items">
+        <!-- Portfolio item -->
+        <a href="portfolio-item-green-spoon.html" class="portfolio-item">
+          <img src="img/portfolio-green-spoon.jpg" alt="" class="portfolio-img" />
+        </a>
+        <!-- Portfolio item -->
+        <a href="portfolio-item-city-score.html" class="portfolio-item">
+          <img src="img/portfolio-city-score.jpeg" alt="" class="portfolio-img" />
+        </a>
+        <!-- Portfolio item -->
+        <a href="portfolio-item-blog.html" class="portfolio-item">
+          <img src="./img/portfolio-blog.jpeg" alt="" class="portfolio-img" />
+        </a>
+        <!-- Portfolio item -->
+        <a href="portfolio-item-snake.html" class="portfolio-item">
+          <img src="img/portfolio-snake.jpeg" alt="" class="portfolio-img" />
+        </a>
+        <!-- Portfolio item -->
+        <a href="portfolio-item-war.html" class="portfolio-item">
+          <img src="img/portfolio-war.jpeg" alt="" class="portfolio-img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a href="mailto:rafik.zaied96@gmail.com" class="footer-link">rafik.zaied96@gmail.com</a>
+
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a class="social-list-link" target="_blank" href="https://github.com/Rafik-Zaied">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
